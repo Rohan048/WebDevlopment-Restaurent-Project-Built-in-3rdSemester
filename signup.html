@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #signup-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #signup-form label {
+            font-weight: bold;
+        }
+
+        #signup-form input {
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        #signup-button {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username">
+
+            
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age" placeholder="Your age">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"  placeholder="Enter your email">
+
+            <label for="mob">Mobile no</label>
+            <input type="text" id="mobile" name="mob" placeholder="Your mobile no">
+
+            <label for="city">City</label>
+            <select id="city" name="Tutorials">
+                <option value="Rj">choose</option>
+                <option value="Rj">Rajkot</option>
+                <option value="jn">jamnagar</option>
+                <option value="ah">Ahemdabad</option>
+            </select>
+            <br>
+            <button type="button" id="signup">Sign Up</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('signup').addEventListener('click', function () {
+            var username = document.getElementById('fname').value;
+            var email = document.getElementById('lname').value;
+            var password = document.getElementById('age').value;
+            var password = document.getElementById('email').value;
+            var password = document.getElementById('mobile').value;
+            var password = document.getElementById('city').value;
+
+            if (fname && lname && age && email && mobile && city ) {
+                alert('Sign up successful');
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+</body>
+</html>
